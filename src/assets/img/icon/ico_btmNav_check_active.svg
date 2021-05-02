@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="32" viewBox="0 0 48 32">
+  <g id="그룹_88" data-name="그룹 88" transform="translate(-164 -857)">
+    <g id="그룹_87" data-name="그룹 87" transform="translate(0 -18)">
+      <rect id="사각형_8" data-name="사각형 8" width="16" height="20" rx="3" transform="translate(180 881)" fill="#fff"/>
+      <g id="그룹_86" data-name="그룹 86" transform="translate(126 139)">
+        <rect id="사각형_52" data-name="사각형 52" width="3" height="9" rx="1.5" transform="translate(64 747)" fill="#0086aa" style="mix-blend-mode: multiply;isolation: isolate"/>
+        <rect id="사각형_51" data-name="사각형 51" width="3" height="10" rx="1.5" transform="translate(67 747) rotate(90)" fill="#d99964" style="mix-blend-mode: multiply;isolation: isolate"/>
+        <rect id="사각형_53" data-name="사각형 53" width="3" height="10" rx="1.5" transform="translate(67 753) rotate(90)" fill="#215989" style="mix-blend-mode: multiply;isolation: isolate"/>
+        <rect id="사각형_50" data-name="사각형 50" width="3" height="9" rx="1.5" transform="translate(57 747)" fill="#da464b" style="mix-blend-mode: multiply;isolation: isolate"/>
+      </g>
+    </g>
+    <rect id="Frame" width="48" height="32" transform="translate(164 857)" fill="none"/>
+  </g>
+</svg>

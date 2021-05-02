@@ -1,1 +1,316 @@
-/* You can add global styles to this file, and also import other style files */
+/**
+ * Noto Sans KR
+**/
+@font-face {
+  font-family: "Noto Sans KR Thin";
+  font-weight: 100;
+  font-style: normal;
+  src: url("assets/fonts/NotoSans-Light.eot") format("eot"),
+    url("assets/fonts/NotoSans-Thin.otf") format("opentype"),
+    url("assets/fonts/NotoSans-Thin.woff") format("woff"),
+    url("assets/fonts/NotoSans-Thin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Noto Sans KR Light";
+  font-style: normal;
+  src: url("assets/fonts/NotoSans-Light.eot?") format("eot"),
+    url("assets/fonts/NotoSans-Light.otf") format("opentype"),
+    url("assets/fonts/NotoSans-Light.woff") format("woff"),
+    url("assets/fonts/NotoSans-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Noto Sans KR DemiLight";
+  font-style: normal;
+  src: url("assets/fonts/NotoSans-DemiLight.eot?") format("eot"),
+    url("assets/fonts/NotoSans-DemiLight.otf") format("opentype"),
+    url("assets/fonts/NotoSans-DemiLight.woff") format("woff"),
+    url("assets/fonts/NotoSans-DemiLight.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  src: url("assets/fonts/NotoSans-Regular.eot?") format("eot"),
+    url("assets/fonts/NotoSans-Regular.otf") format("opentype"),
+    url("assets/fonts/NotoSans-Regular.woff") format("woff"),
+    url("assets/fonts/NotoSans-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Noto Sans KR Medium";
+  font-style: normal;
+  src: url("assets/fonts/NotoSans-Medium.eot?") format("eot"),
+    url("assets/fonts/NotoSans-Medium.otf") format("opentype"),
+    url("assets/fonts/NotoSans-Medium.woff") format("woff"),
+    url("assets/fonts/NotoSans-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Noto Sans KR Bold";
+  font-style: normal;
+  src: url("assets/fonts/NotoSans-Bold.eot?") format("eot"),
+    url("assets/fonts/NotoSans-Bold.otf") format("opentype"),
+    url("assets/fonts/NotoSans-Bold.woff") format("woff"),
+    url("assets/fonts/NotoSans-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Noto Sans KR Black";
+  font-style: normal;
+  src: url("assets/fonts/NotoSans-Black.eot?") format("eot"),
+    url("assets/fonts/NotoSans-Black.otf") format("opentype"),
+    url("assets/fonts/NotoSans-Black.woff") format("woff"),
+    url("assets/fonts/NotoSans-Black.woff2") format("woff2");
+}
+
+/* 공통 */
+/* 공통스타일 */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  word-break: keep-all;
+  background-repeat: no-repeat;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  color: #000000;
+  font-family: "Noto Sans KR", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  background-color: #f9faff;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+em,
+cite,
+address,
+dfn,
+var {
+  vertical-align: middle;
+  font-style: normal;
+  line-height: 1em;
+}
+
+a,
+blockquote,
+dd,
+div,
+dl,
+dt,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+iframe,
+img,
+li,
+ol,
+p,
+span,
+ul {
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+select {
+  border: 1px solid #ffffff;
+  font-size: 12px;
+  color: #767676;
+  vertical-align: middle;
+}
+
+textarea,
+input {
+  font-size: 12px;
+  color: #767676;
+  vertical-align: middle;
+  line-height: 12px;
+  border-radius: 0px;
+}
+
+fieldset {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"],
+input[type="search"],
+input[type="button"],
+textarea {
+  -webkit-appearance: none;
+}
+
+strong {
+  font-weight: normal;
+}
+
+/*아이폰*/
+input[type="button"] {
+  cursor: pointer;
+}
+
+button {
+  vertical-align: top;
+  border: 0px;
+  cursor: pointer;
+  background-color: inherit;
+}
+
+/* Table 
+  ---------------------------------------------------*/
+table,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* border-collapse: collapse; ff에서 border="0" 인 경우 문제 발생 */
+table caption {
+  position: absolute;
+  left: -1000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* For Screen Reader
+  ---------------------------------------------------*/
+legend {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+/* link
+  ---------------------------------------------------*/
+a,
+button,
+a:link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:visited {
+  color: #000000;
+}
+
+a:visited,
+button:visited {
+  text-decoration: none;
+}
+
+a:hover,
+button:hover {
+  text-decoration: none;
+}
+
+a:focus,
+button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+/* image boder 0
+  ---------------------------------------------------*/
+img {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+
+/* Style none 
+  ---------------------------------------------------*/
+hr,
+caption {
+  display: none;
+}
+
+address {
+  display: none;
+}
+
+col {
+  background: none;
+}
+
+/* motion */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUpMenu {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    transform: translateY(50px);
+  }
+
+  60% {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}

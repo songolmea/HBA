@@ -1,0 +1,23 @@
+<div class="header">
+  <div class="menu_btn">
+    <button id="menuBtn" (click)="toggleClass()">메뉴</button>
+  </div>
+  <div class="user_info">
+    <div class="name">박보검</div>
+    <div class="type">학생</div>
+  </div>
+</div>
+
+<div id="leftMenu" [class.active]="classApplied">
+  <div class="left_menu__wrap">
+    <div class="lm_hdr" style="animation-duration: 0.5s">사용자 정보</div>
+    <div class="my_account" style="animation-duration: 0.7s">내 정보</div>
+    <div class="my_password" style="animation-duration: 0.9s">로그인 정보</div>
+    <div class="lm_hdr" style="animation-duration: 1.1s; border-top: 0px">
+      인증 수단
+    </div>
+    <div class="my_account" style="animation-duration: 1.3s">패턴</div>
+    <div class="my_account" style="animation-duration: 1.5s">자동 로그인</div>
+    <div class="my_password" style="animation-duration: 1.7s">Face ID</div>
+  </div>
+</div>

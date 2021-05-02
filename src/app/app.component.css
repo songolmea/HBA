@@ -1,0 +1,6 @@
+#mainCnt {
+  overflow-y: auto;
+  position: relative;
+  min-height: 100vh;
+  padding: 16px 16px 83px 16px;
+}

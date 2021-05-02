@@ -1,0 +1,138 @@
+.header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 50px;
+  z-index: 10;
+}
+
+.header .menu_btn {
+  position: absolute;
+  top: 17px;
+  left: 17px;
+  width: 20px;
+  height: 16px;
+}
+
+.header .menu_btn button {
+  width: 20px;
+  height: 16px;
+  font-size: 0px;
+  background-image: url("/../assets/img/icon/ico_sysHdr_menu.svg");
+  background-size: 20px;
+  background-position: center;
+}
+
+.header .user_info {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 0px;
+}
+
+.header .user_info .name {
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 10px;
+  padding-left: 41px;
+  font-size: 18px;
+  background-image: url("/../assets/img/icon/ico_sysHdr_nameteg.svg");
+  background-size: 31px;
+  background-position: left center;
+}
+
+.header .user_info .type {
+  vertical-align: middle;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  line-height: 12px;
+  background-color: #0086aa;
+  color: #ffffff;
+}
+
+#leftMenu {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: translateX(-100%);
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  z-index: 1;
+  opacity: 0;
+  transition: transform 0.4s;
+}
+
+#leftMenu.active {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.left_menu__wrap {
+  height: 100vh;
+  padding: 55px 20px 20px 20px;
+}
+
+.left_menu__wrap .lm_hdr {
+  margin-bottom: 25px;
+  padding-top: 30px;
+  border-top: 1px solid #dddddd;
+  font-family: "Noto Sans KR";
+  font-size: 12px;
+  color: #707070;
+  visibility: hidden;
+  animation-name: none;
+}
+
+.left_menu__wrap .my_account {
+  position: relative;
+  margin-bottom: 25px;
+  font-family: "Noto Sans KR Bold";
+  font-size: 16px;
+  visibility: hidden;
+  animation-name: none;
+}
+
+.left_menu__wrap .my_account::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 6px;
+  right: 0px;
+  width: 8px;
+  height: 14px;
+  background-image: url("/../assets/img/icon/ico_leftMenu_arrow.svg");
+  background-size: 8px;
+}
+
+.left_menu__wrap .my_password {
+  position: relative;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #dddddd;
+  font-family: "Noto Sans KR Bold";
+  font-size: 16px;
+  visibility: hidden;
+  animation-name: none;
+}
+
+.left_menu__wrap .my_password::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 6px;
+  right: 0px;
+  width: 8px;
+  height: 14px;
+  background-image: url("/../assets/img/icon/ico_leftMenu_arrow.svg");
+  background-size: 8px;
+}
+
+.active .left_menu__wrap .lm_hdr,
+.active .left_menu__wrap .my_account,
+.active .left_menu__wrap .my_password {
+  visibility: visible;
+  animation-name: fadeInUpMenu;
+}

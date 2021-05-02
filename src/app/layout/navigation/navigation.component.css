@@ -1,0 +1,42 @@
+#bottomNavigation {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  display: grid;
+  width: 100%;
+  height: 83px;
+  padding-bottom: 34px;
+  background-color: #00294c;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#bottomNavigation a {
+  font-size: 0px;
+  background-size: 48px;
+  background-position: center;
+  transition: all 0.4s;
+}
+
+#bottomNavigation a.btnNav__system {
+  background-image: url("/../assets/img/icon/ico_btmNav_system.svg");
+}
+
+#bottomNavigation a.btnNav__system.active {
+  background-image: url("/../assets/img/icon/ico_btmNav_system_active.svg");
+}
+
+#bottomNavigation a.btnNav__check {
+  background-image: url("/../assets/img/icon/ico_btmNav_check.svg");
+}
+
+#bottomNavigation a.btnNav__check.active {
+  background-image: url("/../assets/img/icon/ico_btmNav_check_active.svg");
+}
+
+#bottomNavigation a.btnNav__class {
+  background-image: url("/../assets/img/icon/ico_btmNav_class.svg");
+}
+
+#bottomNavigation a.btnNav__class.active {
+  background-image: url("/../assets/img/icon/ico_btmNav_class_active.svg");
+}

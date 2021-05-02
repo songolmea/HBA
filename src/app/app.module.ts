@@ -7,6 +7,7 @@ import { NavigationComponent } from './layout/navigation/navigation.component';
 import { AttendanceComponent } from './content/attendance/attendance.component';
 import { SystemComponent } from './content/system/system.component';
 import { ClassesComponent } from './content/classes/classes.component';
+import { HeaderComponent } from './layout/header/header.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { ClassesComponent } from './content/classes/classes.component';
     AttendanceComponent,
     SystemComponent,
     ClassesComponent,
+    HeaderComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

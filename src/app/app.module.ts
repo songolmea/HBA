@@ -3,20 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './layout/header/header.component';
-import { LeftMenuComponent } from './layout/left-menu/left-menu.component';
+import { NavigationComponent } from './layout/navigation/navigation.component';
+import { AttendanceComponent } from './content/attendance/attendance.component';
+import { SystemComponent } from './content/system/system.component';
+import { ClassesComponent } from './content/classes/classes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    LeftMenuComponent
+    NavigationComponent,
+    AttendanceComponent,
+    SystemComponent,
+    ClassesComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
